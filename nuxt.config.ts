@@ -1,14 +1,23 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Sibdoll',
+      title: "Sibdoll",
       meta: [
-        { name: 'description', content: 'Online store of sex dolls from Sibiria' }
-      ]
-    }
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1.0",
+        },
+        {
+          name: "description",
+          content: "Online store of sex dolls from Siberia",
+        },
+      ],
+    },
   },
-  compatibilityDate: '2024-11-01',
+  typescript: {
+    typeCheck: true,
+  },
+  compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss']
-})
+  modules: ["@nuxt/eslint"],
+});
