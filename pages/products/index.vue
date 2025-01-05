@@ -5,7 +5,7 @@ useHead({
 </script>
 
 <template>
-  <div>Products</div>
+  <div class="products">Products</div>
 </template>
 
-<style scoped></style>
+<style scoped lang="sass"></style>
